@@ -6,24 +6,22 @@ author:
   - name          : "Kayla N. Jordan"
     affiliation   : "1"
     corresponding : yes    # Define only one corresponding author
-    address       : "108 E Dean Keeton St, Austin, TX 78712"
-    email         : "kaylajordan@utexas.edu"
+    address       : "326 Market St, Harrisburg, PA 17101"
+    email         : "kjordan@harrisburgu.edu"
   - name          : "Erin M. Buchanan"
-    affiliation   : "2"
+    affiliation   : "1"
   - name          : "William E. Padfield"
-    affiliation   : "3"
+    affiliation   : "2"
     
 
 affiliation:
   - id            : "1"
-    institution   : "University of Texas - Austin"
-  - id            : "2"
     institution   : "Harrisburg University of Science and Technology"
-  - id            : "3"
+  - id            : "2"
     institution   : "Missouri State University"
 
 author_note: |
-  Kayla N. Jordan is a Ph.D. candidate at the University of Texas at Austin. Erin M. Buchanan is an  Professor of Cognitive Analytics and Harrisburg University of Science and Technology. William E. Padfield is a Masters degree candidate at Missouri State University.
+  Kayla N. Jordan is an Assistant Professor of Social Analytics at Harrisburg University of Science and Technology. Erin M. Buchanan is an  Professor of Cognitive Analytics and Harrisburg University of Science and Technology. William E. Padfield is a Masters degree candidate at Missouri State University.
   
   Submitted to Meta-Psychology. Click here to follow the fully transparent editorial process of this submission. Participate in open peer review by commenting through hypothes.is directly on this preprint.
   
@@ -176,11 +174,11 @@ The decision to treat the voting record on the war measures (yay or nay for cont
 
 ```{r data-setup, include = FALSE}
 
-senateIraq = read.csv("senate iraq.csv")
-senateKosovo = read.csv("senate kosovo.csv")
-houseIraq = read.csv("house iraq.csv")
-houseKosovo = read.csv("house kosovo.csv")
-houseLibya = read.csv("house libya.csv")
+senateIraq = read.csv("senate iraq.csv", stringsAsFactors = T)
+senateKosovo = read.csv("senate kosovo.csv", stringsAsFactors = T)
+houseIraq = read.csv("house iraq.csv", stringsAsFactors = T)
+houseKosovo = read.csv("house kosovo.csv", stringsAsFactors = T)
+houseLibya = read.csv("house libya.csv", stringsAsFactors = T)
 
 #REPLACE past, present, and future with cognitive complexity, internal focus, and external focus
 
